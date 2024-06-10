@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Este bloque de código es el RESET CSS (obtenido de CSS tools) sirve para poner todos los estilos en 0, no tener estilos por 
+defecto y no tener problemas en el futuro. Se recomienda ponerlo siempre */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --- */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 60px 20px;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0 157 149);
+
+}
+
+.logo span {
+    color: #fd9e9e;
+}
+
+.nav nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(0 157 149);
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+
+.iconitos nav {
+    display: flex;
+    gap: 25px;
+}
+
+.iconitos svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.main {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.fotoTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skinClubbtn {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+/* Menor de 480px: El menú del navbar debe convertirse en un menú desplegable u oculto */
+@media (max-width: 480px) {
+    .nav nav {
+        display: none;
+    }
+
+    .iconitos nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* Entre 481px y 768px: El menú estará en el lateral */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav nav {
+        display: block;
+        position: absolute;
+        background: white;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    .nav nav a {
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .iconitos {
+        display: none;
+    }
+}

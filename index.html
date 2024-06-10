@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Challenge1</title>
+</head>
+
+<!--Lo primero que he hecho fue coger la captura de pantalla y analizarla parte por parte buscando la estructura del html
+(header, nav, main, aside, footer). Me ayudé del botón "inspeccionar" en la página web original. 
+Luego hice el esqueleto de mi html, poniéndole ya nombre a las clases para ayudarme en el CSS.  -->
+<body> 
+    <header>
+            <div class="banner">
+                <div class="logo">PLANET<span>SKIN</span></div> <!--El logo PLANET SKIN--> 
+                <div class="nav">  <!--los 8 menús-->
+                    <nav>
+                        <a href="#">Cuidado Facial <span>&#9660;</span></a>
+                        <a href="#">Tipo de piel<span>&#9660;</span></a>
+                        <a href="#">Te preocupa<span>&#9660;</span></a>
+                        <a href="#">Cuidados corporales<span>&#9660;</span></a>
+                        <a href="#">Maquillaje<span>&#9660;</span></a>
+                        <a href="#">Outlet y promociones<span>&#9660;</span></a>
+                        <a href="#">Novedades</a>
+                        <a href="#">Marcas<span>&#9660;</span></a>
+                    </nav>
+                </div>
+                <div  class="iconitos"> <!--los 3 iconitos de Área-Personal, Búsqueda y Cesta-->
+                <nav> 
+                    <a href="#">
+                        <svg class="Icon Icon--account " role="presentation" viewBox="0 0 20 20">
+                            <g transform="translate(1 1)" stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <path d="M0 18c0-4.5188182 3.663-8.18181818 8.18181818-8.18181818h1.63636364C14.337 9.81818182 18 13.4811818 18 18"></path>
+                            <circle cx="9" cy="4.90909091" r="4.90909091"></circle>
+                            </g></svg>
+                    </a>
+                    <a href="#">
+                        <svg class="Icon Icon--search " role="presentation" viewBox="0 0 18 17">
+                            <g transform="translate(1 1)" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <path d="M16 16l-5.0752-5.0752"></path>
+                            <circle cx="6.4" cy="6.4" r="6.4"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="Icon Icon--cart " role="presentation" viewBox="0 0 17 20">
+                            <path d="M0 20V4.995l1 .006v.015l4-.002V4c0-2.484 1.274-4 3.5-4C10.518 0 12 1.48 12 4v1.012l5-.003v.985H1V19h15V6.005h1V20H0zM11 4.49C11 2.267 10.507 1 8.5 1 6.5 1 6 2.27 6 4.49V5l5-.002V4.49z" fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </nav>
+                </div>
+            </div>   
+    </header>
+        
+
+    <main>
+        <section class="foto">
+            <img src="https://planet-skin.com/cdn/shop/files/1800x800-1_34_993a8350-fdf9-48d8-b616-427fa5861a8a_2200x.jpg?v=1715166339" alt="Imagen de fondo" class="background-image">
+            <div class="fotoTexto">
+                <h1>EL MEJOR COSMÉTICO</h1>
+                <h2>También protector solar</h2>
+                <p>Diseñada para usar los 365 días del año</p>
+            <button class="skinClubbtn">Planet Skin Club</button>
+            </div>
+        </section>
+    </main>   
+
+</body>
+</html>
