@@ -61,7 +61,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    padding: 60px 20px;
+    padding: 40px 10px;
 
 }
 
@@ -76,27 +76,42 @@ body {
     color: #fd9e9e;
 }
 
+
 .nav nav {
     display: flex;
+    gap: 25px;
+    flex-direction: column;
+    color: rgb(0 157 149);
+}
+
+.nav1, .nav2 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center; 
     gap: 50px;
+}
+
+.nav2{
+    justify-content: center;
 }
 
 .nav a {
     text-decoration: none;
-    color: rgb(0 157 149);
     padding: 5px;
+    color: rgb(0 157 149);
 }
 
 
 .iconitos nav {
     display: flex;
     gap: 25px;
-    color: rgb(0 157 149);
 }
 
 .iconitos svg {
     width: 20px;
     height: 20px;
+    color: rgb(0 157 149);
 }
 
 
@@ -106,7 +121,7 @@ body {
     color: white;
 }
 
-.background-image {
+.foto img {
     width: 100%;
     height: auto;
 }
@@ -134,6 +149,15 @@ body {
 
 .skinClubbtn span::before{
     content: url("https://app-api.loloyal.com/image/launcherIcons/boom-start.svg");
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+
+.skinClubbtn, .chat {
+    position: absolute; 
+    bottom: 0px;
+    z-index: 0;
 }
 
 .skinClubbtn {
@@ -142,63 +166,45 @@ body {
     color: white;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 20px;
-    font-weight: 700;
+    border-radius: 30px;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
+    left: 2%; 
+    font-size: 15px;
 }
 
 .chat {
     background-color: #fd9e9e;
     border: none;
     color: white;
-    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%; 
+    left: 92%; 
+
+}
+
+.chat svg{
+    width: 80px;
+    height: 80px;
 }
 
 
 
-/* Menor de 480px: El menú del navbar debe convertirse en un menú desplegable u oculto */
-@media (max-width: 480px) {
+/* Media queries */
+
+@media screen and (max-width: 480px) {
     .nav nav {
         display: none;
-    }
-
-    .iconitos nav {
-        display: none;
-    }
-
-    header {
-        display: block;
-        text-align: center;
-    }
-
-    .logo {
-        margin-bottom: 10px;
     }
 }
 
-/* Entre 481px y 768px: El menú estará en el lateral */
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .nav nav {
-        display: block;
-        position: absolute;
-        background: white;
-        width: 100%;
-        left: 0;
-        top: 60px;
-        text-align: left;
-        padding: 10px 0;
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px; 
+
     }
 
-    .nav nav a {
-        display: block;
-        padding: 5px 20px;
-    }
-
-    .iconitos {
-        display: none;
-    }
 }
