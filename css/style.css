@@ -84,6 +84,8 @@ body {
     color: rgb(0 157 149);
 }
 
+/* ERROR3: en lugar de hacer 2 nav podía haber arreglado el max-width al contenedor (ojo, usar el MAX porque si 
+ponemos width a secas hacemos fijo el width y esto da problemas)-->*/
 .nav1, .nav2 {
     display: flex;
     flex-direction: row; 
@@ -147,6 +149,7 @@ body {
     font-size: 15px;
 }
 
+/*No hace falta el span para usar el ::before y el ::after*/
 .skinClubbtn span::before{
     content: url("https://app-api.loloyal.com/image/launcherIcons/boom-start.svg");
     vertical-align: middle;
